@@ -11,6 +11,7 @@ function updateRating(movieIndex, rating) {
 
 <template>
   <div class="app">
+    <button class="h-9 bg-lime-700 w-20 rounded-2xl text-white absolute z-10 right-9 top-9">add</button>
     <div class="movie-list">
       <div
         class="movie-item"
@@ -37,7 +38,8 @@ function updateRating(movieIndex, rating) {
               </span>
             </div>
           </div>
-          <img :src="movie.image" class="movie-item-image" alt="" />
+          <!-- <img :src="movie.image" class="movie-item-image" alt="" /> -->
+          <img src="https://placehold.co/682x969/cyan/white" class="movie-item-image" alt="" />
         </div>
 
         <div class="movie-item-content-wrapper">
@@ -78,5 +80,6 @@ function updateRating(movieIndex, rating) {
         </div>
       </div>
     </div>
+    <div class="movie-form h-96 w-96 absolute self-center place-self-center bg-slate-300"></div>
   </div>
 </template>
